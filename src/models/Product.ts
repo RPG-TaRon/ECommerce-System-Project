@@ -1,3 +1,5 @@
+import { calculateDiscount } from "../utils/discountCalculator.js";
+
 export class Product {
     constructor(
         public id: number,
@@ -24,7 +26,7 @@ export class Product {
     `.trim();
     }
  getpricewithdiscount(): number {
-    const discountAmount = (this.price * this.discountPercentage) / 100;
+    const discountAmount = calculateDiscount(this.price, this.discountPercentage);
     return this.price - discountAmount;
 }
 }
