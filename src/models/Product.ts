@@ -1,4 +1,4 @@
-import { calculateDiscount } from "../utils/discountCalculator.ts";
+import { calculateDiscount } from "../utils/discountCalculator";
 
 export class Product {
     constructor(
@@ -25,7 +25,7 @@ export class Product {
     Brand: ${this.brand}
     `.trim();
     }
- getpricewithdiscount(): number {
+ getPriceWithDiscount(): number {
     const discountAmount = calculateDiscount(this.price, this.discountPercentage);
     return this.price - discountAmount;
 }
