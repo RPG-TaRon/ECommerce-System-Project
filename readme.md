@@ -1,0 +1,8 @@
+How you implemented TypeScript features and OOP principles.
+    - For this project, I used TypeScript and object-oriented programming by creating a Product class with typed properties and methods like displayDetails() and getPriceWithDiscount(). This allowed me to organize data and behavior together while using TypeScript’s type system for better reliability. I also separated reusable logic into utility files, such as discount and tax calculators, which helped keep the code modular and easy to maintain.
+
+The challenges you encountered and how you overcame them.
+    - This project was about 50/50 for me. Mainly because I forgot a decent amount but quickly remembered once brushing through the the modules. My biggest challenege was really removing the errors which had me tinkering a lot with my files. I had to do a decent amount of searching. One of the other classmates finished early and they helped me get a picture of how I wanted to start my project. Once I gathered my plan, I was able to take off from there.
+
+How you handled asynchronous operations and error management.
+    - I used async/await within the API service to fetch product data from the DummyJSON API. I wrapped these operations in try/catch blocks to handle potential failures, such as network issues or invalid responses. I created a custom ApiError class and a centralized error handling function to provide consistent and readable error messages.
