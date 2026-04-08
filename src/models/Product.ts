@@ -1,4 +1,4 @@
-import { calculateDiscount } from "../utils/discountCalculator.js";
+import { calculateDiscount } from "../utils/discountCalculator.ts";
 
 export class Product {
     constructor(
